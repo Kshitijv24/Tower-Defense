@@ -18,6 +18,7 @@ public class CoordinateLabeler : MonoBehaviour
         if (!Application.isPlaying)
         {
             DisplayCoordinates();
+            UpdateObjectName();
         }
     }
 
@@ -27,5 +28,10 @@ public class CoordinateLabeler : MonoBehaviour
         coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);
 
         label.text = coordinates.x + "," + coordinates.y;
+    }
+
+    private void UpdateObjectName()
+    {
+        transform.parent.name = coordinates.ToString();
     }
 }
