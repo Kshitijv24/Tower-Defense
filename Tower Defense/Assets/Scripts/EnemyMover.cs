@@ -1,19 +1,22 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] List<Waypoints> path = new List<Waypoints>();
+    [SerializeField] float waithTime;
     private void Start()
     {
-        PrintWaypointsName();
+        StartCoroutine(FollowPath());
     }
 
-    private void PrintWaypointsName()
+    IEnumerator FollowPath()
     {
         foreach(Waypoints waypoints in path)
         {
-            Debug.Log(waypoints.name);
+            transform.position = waypoints.transform.position;
+            yield return new WaitForSeconds(waithTime);
         }
     }
 }
