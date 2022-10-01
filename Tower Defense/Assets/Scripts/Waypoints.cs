@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
-    private void Start()
-    {
-        
-    }
+    [SerializeField] bool isPlaceable;
 
-    private void Update()
+    private void OnMouseDown()
     {
-        
+        if (isPlaceable)
+        {
+            Debug.Log(transform.name);
+        }
     }
 }

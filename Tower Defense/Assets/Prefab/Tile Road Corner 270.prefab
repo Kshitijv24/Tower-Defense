@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile Road Corner 270
       objectReference: {fileID: 0}
+    - target: {fileID: 5950235717128826389, guid: 740af680905d75b4b904671bb181e217, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962860717719288350, guid: 740af680905d75b4b904671bb181e217, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8743080943406382581, guid: 740af680905d75b4b904671bb181e217, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.7071068
