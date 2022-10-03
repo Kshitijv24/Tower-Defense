@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Waypoints : MonoBehaviour
+public class Waypoint : MonoBehaviour
 {
     [SerializeField] GameObject towerPrefab;
 
@@ -12,8 +12,6 @@ public class Waypoints : MonoBehaviour
             return isPlaceable;
         }
     }
-
-
 
     private void OnMouseDown()
     {
