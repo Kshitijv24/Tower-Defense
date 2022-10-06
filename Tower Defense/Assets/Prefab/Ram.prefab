@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 5
-  currentHitPoints: 0
+  difficultyRamp: 1
 --- !u!114 &6922886592486629047
 MonoBehaviour:
   m_ObjectHideFlags: 0
