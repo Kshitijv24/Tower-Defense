@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class ObjectPoll : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] int poolSize;
-    [SerializeField] float spawnTimer;
+    [SerializeField] [Range(0, 50)] int poolSize;
+    [SerializeField] [Range(0.1f, 5f)] float spawnTimer;
 
     GameObject[] pool;
 
